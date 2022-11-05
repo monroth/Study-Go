@@ -1,0 +1,3 @@
+Create command line calculator for reversed polish notation. 
+Numbers and operations are divided by space. 
+Error text messages in case of incorrect input should be provided.
