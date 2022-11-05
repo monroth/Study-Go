@@ -1,0 +1,6 @@
+# Study-Go
+Code I wrote during studying Go
+
+For now, only test problems from my friend. 
+
+If you want to solve them yourself, then I suggest reading Basics here first https://go.dev/tour/list. After that, in my opinion problems are ordered in order of increasing difficulty as follows: helloWorld, romanNumbers, binaryTreeWalking, stringCount, forthOne
