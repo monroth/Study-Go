@@ -14,12 +14,9 @@ var operands = map[string]func(int64, int64) int64{
 	"-": func(a, b int64) int64 { return a - b },
 	"*": func(a, b int64) int64 { return a * b },
 	"/": func(a, b int64) int64 { return a / b },
-	//	'C': 100,
-	//	'D': 500,
-	//	'M': 1000,
 }
 
-func bop(parsedPointer *[]int64, element string) error {
+func useOperand(parsedPointer *[]int64, element string) error {
 	if operand, ok := operands[element]; ok {
 		l := len(*parsedPointer) - 1
 		if l > 0 {
@@ -49,7 +46,7 @@ func evalString(s string) {
 		if number, err := strconv.ParseInt(element, 10, 64); err == nil {
 			parsed = append(parsed, number)
 		} else {
-			err := bop(&parsed, element)
+			err := useOperand(&parsed, element)
 			if err != nil {
 				fmt.Println(err)
 				return
