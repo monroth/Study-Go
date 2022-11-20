@@ -1,0 +1,1 @@
+Create console utilite that concurrently fetches urls from it's arguments and writes response time and other information

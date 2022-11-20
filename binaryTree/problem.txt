@@ -1,0 +1,7 @@
+a) Implement binary tree and it's inorder traversal
+https://leetcode.com/problems/binary-tree-inorder-traversal/
+
+b) Implement concurrent check of equivalence of two trees 
+https://go.dev/tour/concurrency/8
+bonus points if works on cyclic trees
+(used interface from problem a)
